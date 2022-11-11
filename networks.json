@@ -2,6 +2,12 @@
   "matic": {
     "aPolEURS": {
       "address": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5"
+    },
+    "aPolEURSSDebt": {
+      "address": "0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB"
+    },
+    "aPolEURVDebt": {
+      "address": "0x5D557B07776D12967914379C71a1310e917C7555"
     }
   }
 }

@@ -1,6 +1,6 @@
 specVersion: 0.0.4
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: aPolEURS
@@ -17,11 +17,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolEURS/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolEURSSDebt
     network: matic
@@ -37,11 +37,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolEURSSDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolEURVDebt
     network: matic
@@ -57,11 +57,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolEURVDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolJEUR
     network: matic
@@ -77,12 +77,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolJEUR/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
-
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolJEURSDebt
     network: matic
@@ -98,11 +97,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolJEURSDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolJEURVDebt
     network: matic
@@ -118,11 +117,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolJEURVDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolBAL
     network: matic
@@ -138,11 +137,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolBAL/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolBALSDebt
     network: matic
@@ -158,11 +157,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolBALSDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolBALVDebt
     network: matic
@@ -178,11 +177,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolBALVDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolCRV
     network: matic
@@ -198,11 +197,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolCRV/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolCRVSDebt
     network: matic
@@ -218,11 +217,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolCRVSDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolCRVVDebt
     network: matic
@@ -238,11 +237,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolCRVVDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolDPI
     network: matic
@@ -258,11 +257,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolDPI/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolDPISDebt
     network: matic
@@ -278,11 +277,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolDPISDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolDPIVDebt
     network: matic
@@ -298,11 +297,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolDPIVDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolGHST
     network: matic
@@ -318,11 +317,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolGHST/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolGHSTSDebt
     network: matic
@@ -338,11 +337,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolGHSTSDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolGHSTVDebt
     network: matic
@@ -358,11 +357,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolGHSTVDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolMIMATIC
     network: matic
@@ -378,11 +377,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolMIMATIC/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolMIMATICVDebt
     network: matic
@@ -398,11 +397,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolMIMATICVDebt/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolMATICX
     network: matic
@@ -418,11 +417,11 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolMATICX/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
   - kind: ethereum
     name: aPolSTMATIC
     network: matic
@@ -438,8 +437,8 @@ dataSources:
         - Balance
       abis:
         - name: CErc20Delegator
-          file: ./abis/CErc20Delegator.json
+          file: aPolSTMATIC/abis/CErc20Delegator.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/a-pol-eurs.ts
+      file: aPolEURS/aPolEURS.wasm
