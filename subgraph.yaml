@@ -1,0 +1,23 @@
+specVersion: 0.0.1
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: aPolEURS
+    network: matic
+    source:
+      address: "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5"
+      abi: aPolEURS
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - Upgraded
+      abis:
+        - name: aPolEURS
+          file: ./abis/aPolEURS.json
+      eventHandlers:
+        - event: Upgraded(indexed address)
+          handler: handleUpgraded
+      file: ./src/a-pol-eurs.ts
